@@ -29,8 +29,33 @@ function calcedad() {
     // La alerta de que se la calculadora se va a iniciar
     alert("Calculadora de edad");
     // 
-    let añointroducido = prompt("Introduce tu año" );
+    let añointroducido = prompt("Introduce tu año");
     let resta = 2026 - añointroducido;
     // alert(`Tienes ${resta} años` )
     añointroducido.innertext = "Tienes más o menos: " + resta
+}
+
+function repetir() {
+    // alerta pa que sepamos keloke hacemos
+    alert("Repetir")
+    // la constante(que es la frase) se asigna con ese nombre y 
+    const frase = "Estoy aprendiendo javascript"
+    for (let i = 1; i <= 50; i++) {
+        console.log(`${i}. ${frase}`)
+    }
+}
+
+function semaforo() {
+    alert("Escribe el color en pura minuscula ")
+    const colorintroducido = prompt("Introduce el color");
+    if (colorintroducido == "rojo"){
+        alert("¡Alto!");
+    } else if (colorintroducido == "amarillo"){
+        alert("Precaución");
+    } else if (colorintroducido == "verde") {
+        alert("Adelante");
+    } else {
+        alert("ERROR")
+    }
+
 }
