@@ -16,10 +16,15 @@ function sinStock() {
 }
 
 function destacarCaracteristica() {
+    // buscamos el get element by id y le damos nombre al elemento del ul
     let ul = document.getElementById("lista-caracteristicas");
+    // le ponemos un nombre a la lista o mejor dicho a los hijos de la lista
     let lista = ul.children;
+    // le damos nombre al segundo hijo de la lista de elementos
     let segundohijo = lista[1];
+    // hacemos que en ese elemento cuando pulsemos el boton asignado a dicha función aparezca dicho texto
     segundohijo.innerText = ("Batería mejorada de 24 horas");
+    // le asignamos el estilo de letra que queremos que tenga el innertext
     segundohijo.style.fontWeight = "bold";
 }
 
