@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica DOM E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <div id="tarjeta-producto" class="card">
+            <span class="etiqueta-envio">Envío Gratis</span>
+            
+            <h1 id="nombre-producto">Auriculares SonicBass 3000</h1>
+            <p class="descripcion">La mejor calidad de sonido para tus viajes.</p>
+            
+            <ul id="lista-caracteristicas">
+                <li class="feature">Conexión Bluetooth 5.0</li>
+                <li class="feature">Batería de 12 horas</li>
+                <li class="feature">Resistencia al agua IPX4</li>
+            </ul>
+
+            <div class="zona-compra">
+                <p>Precio actual: <span id="precio-final">89.99</span>€</p>
+                <p class="stock-info">Estado: <span class="estado">En Stock</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-admin">
+        <h3>Panel de Administración</h3>
+        <p>Programar las siguientes acciones en <code>script.js</code>:</p>
+        
+        <button onclick="aplicarDescuento()">1. Aplicar Descuento</button>
+        <button onclick="sinStock()">2. Marcar Sin Stock</button>
+        <button onclick="destacarCaracteristica()">3. Destacar Batería</button>
+        <button onclick="cambiarEnvio()">4. Cambiar info Envío</button>
+        <button onclick="cambiarFondo()">5. Destacar Producto</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

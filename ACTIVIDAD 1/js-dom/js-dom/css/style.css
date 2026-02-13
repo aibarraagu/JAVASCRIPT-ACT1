@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos de la tarjeta de producto */
+.card {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    position: relative;
+    border: 3px solid transparent; /* Preparado para el ejercicio 5 */
+    transition: all 0.3s ease;
+}
+
+.etiqueta-envio {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+h1 { font-size: 1.5rem; margin-bottom: 10px; color: #333; }
+.descripcion { color: #666; font-size: 0.9rem; }
+
+ul { padding-left: 20px; margin: 20px 0; }
+li { margin-bottom: 8px; color: #444; }
+
+.zona-compra {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+#precio-final { font-size: 1.5rem; font-weight: bold; color: #2c3e50; }
+.stock-info { font-size: 0.9rem; margin-top: 5px; }
+.estado { font-weight: bold; color: green; }
+
+/* Estilos del Panel de Admin (zona de alumnos) */
+.panel-admin {
+    margin-top: 40px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.panel-admin button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #34495e;
+    color: white;
+    border: 1px solid #46637f;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.panel-admin button:hover { background-color: #1abc9c; border-color: #1abc9c; }
