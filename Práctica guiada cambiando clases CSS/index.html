@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Home Control</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="panel">
+        <h1>Control de Casa Inteligente</h1>
+
+        <div class="seccion">
+            <h2>💡 Iluminación</h2>
+            <div id="luz-salon" class="dispositivo">Luz del Salón</div>
+            <button onclick="alternarLuz()">Encender/Apagar Salón</button>
+        </div>
+
+        <div class="seccion">
+            <h2>🚨 Sistema de Seguridad</h2>
+            <div id="alarma" class="dispositivo">Alarma Desactivada</div>
+            <button onclick="activarAlarma()">Activar Alarma</button>
+            <button onclick="desactivarAlarma()">Desactivar Alarma</button>
+        </div>
+
+        <div class="seccion">
+            <h2>🌡️ Termostato</h2>
+            <div id="termostato" class="dispositivo eco">Modo ECO Activado</div>
+            <button onclick="subirTemperatura()">Subir Temperatura (Requiere quitar ECO)</button>
+            <button onclick="quitarModoEco()">Activar/Desactivar ECO</button>
+            <p id="mensaje-termostato" class="mensaje"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

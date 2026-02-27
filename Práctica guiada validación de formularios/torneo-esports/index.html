@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripción Torneo Esports</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <h1>🏆 Torneo Amateur - Inscripción</h1>
+
+        <div id="caja-errores" class="oculto"></div>
+
+        <form id="formulario-registro" onsubmit="validarInscripcion(event)">
+
+            <label for="nickname">Nickname (Gamer Tag):</label>
+            <input type="text" id="nickname" placeholder="Ej: ShadowSlayer">
+
+            <label for="nombre">Nombre real:</label>
+            <input type="text" id="nombre" placeholder="Tu nombre completo">
+
+            <label for="edad">Edad (Mínimo 16 años):</label>
+            <input type="number" id="edad" placeholder="16">
+
+            <label for="dni">Introduce tu DNI</label>
+            <input type="text" id="dni" placeholder="Ejemplo: 12345678x">
+
+            <button type="submit">Completar Inscripción</button>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
