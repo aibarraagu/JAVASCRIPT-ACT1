@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Beta Testers</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="inicializarApp()">
+
+    <header class="cabecera">
+        <h1>🎮 Nexus Indie Games - Beta</h1>
+        <button onclick="alternarTema()">🌓 Modo Oscuro</button>
+    </header>
+
+    <div class="contenedor-principal">
+        
+        <section class="panel-diagnostico">
+            <h2>Panel de Diagnóstico</h2>
+            <ul id="lista-servidores">
+                <li class="servidor" id="srv-eu">Servidor Europa</li>
+                <li class="servidor" id="srv-na">Servidor Norteamérica</li>
+                <li class="servidor" id="srv-as">Servidor Asia</li>
+            </ul>
+            <div class="controles-dom">
+                <button onclick="analizarEstructura(this)" id="boton-id" class="clase-ejemplo">1. Analizar este botón</button>
+                <button onclick="marcarServidores()">2. Marcar todos los Servidores</button>
+                <button onclick="destacarPrimerServidor()">3. Destacar Primer Servidor</button>
+            </div>
+        </section>
+
+        <section class="panel-registro">
+            <h2>Formulario de Acceso</h2>
+            
+            <div id="caja-errores" class="oculto"></div>
+
+            <form id="form-beta" onsubmit="validarFormulario(event)">
+                <label for="nickname">Nickname (Mínimo 4 caracteres):</label>
+                <input type="text" id="nickname" placeholder="Tu alias de jugador">
+
+                <label for="edad">Edad (Entre 16 y 99 años):</label>
+                <input type="number" id="edad" placeholder="Ej: 18">
+
+                <label for="faccion">Facción Inicial:</label>
+                <select id="faccion">
+                    <option value="">-- Elige tu facción --</option>
+                    <option value="Ciborgs">Ciborgs</option>
+                    <option value="Mutantes">Mutantes</option>
+                </select>
+
+                <button type="submit" class="btn-principal">Solicitar Acceso Beta</button>
+            </form>
+        </section>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+:root {
+    --bg-color: #f0f2f5;
+    --text-color: #333333;
+    --panel-bg: #ffffff;
+    --border-color: #cccccc;
+    --primary: #0078d7;
+    --danger: #d13438;
+}
+
+body.tema-oscuro {
+    --bg-color: #1e1e1e;
+    --text-color: #f5f5f5;
+    --panel-bg: #2d2d30;
+    --border-color: #434346;
+    --primary: #4cc2ff;
+    --danger: #ff6b6b;
+}
+
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; transition: all 0.3s; }
+.cabecera { background-color: var(--panel-bg); padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); }
+h1 { margin: 0; font-size: 1.5rem; color: var(--primary); }
+.contenedor-principal { display: flex; gap: 20px; padding: 30px; max-width: 1000px; margin: 0 auto; align-items: flex-start; }
+section { background-color: var(--panel-bg); padding: 25px; border-radius: 8px; border: 1px solid var(--border-color); flex: 1; }
+ul { padding-left: 20px; }
+li { padding: 8px; margin-bottom: 5px; background-color: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; }
+
+/* Formularios y Botones */
+label { display: block; margin-top: 15px; font-weight: bold; font-size: 0.9rem; }
+input, select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid var(--border-color); background-color: var(--bg-color); color: var(--text-color); border-radius: 4px; box-sizing: border-box; }
+button { padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; transition: 0.2s; background-color: var(--border-color); color: var(--text-color); }
+button:hover { filter: brightness(0.9); }
+.btn-principal { background-color: var(--primary); color: white; width: 100%; margin-top: 20px; padding: 12px; }
+.btn-peligro { background-color: var(--danger); color: white; margin-top: 20px; }
+
+/* Clases Dinámicas JS */
+.oculto { display: none; }
+#caja-errores { background-color: rgba(209, 52, 56, 0.1); color: var(--danger); padding: 15px; border: 1px solid var(--danger); border-radius: 4px; margin-bottom: 15px; }
+.resaltado { color: var(--primary); font-weight: bold; font-size: 1.2rem; }
+.marcado { border-left: 5px solid var(--primary); font-weight: bold; }

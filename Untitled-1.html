@@ -11,6 +11,8 @@
     <p>Este es un ejemplo básico de estructura HTML.</p>
     <button onclick="saludar()">saludar</button>
     <button onclick="comparar()">comparador de números</button>
+    <button onclick="calculadoraedad()">calcuiladoa edad</button>
+    <p class="elinnertext">queso</p>
     <script>
         function saludar() {
             alert("Saludos");
@@ -20,15 +22,25 @@
         }
 
         function comparar() {
-            alert("Comparador de número")
-            let primernum = prompt("Introduce el primer número")
-            let segundonum = prompt("Introduce el segundo número")
+            alert("Comparador de número");
+            let primernum = prompt("Introduce el primer número");
+            let segundonum = prompt("Introduce el segundo número");
             if (primernum > segundonum) {
                 alert("El primero es mayor")
             } else {
                 alert("El primero no es mayor")
             }
         }
+
+        function calculadoraedad() {
+            const constante = 2026;
+            let edad = prompt("Introduce tu año de nacimiento"); 
+            let cajatexto = constante - edad;
+            edadoperada = document.getElementsByClassName("elinnertext")[0];
+            edadoperada.innerText = "Tienes aproximadamente " + cajatexto + " años";
+        }
+
+        
     </script>
 </body>
 

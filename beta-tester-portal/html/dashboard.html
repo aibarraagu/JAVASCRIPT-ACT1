@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard del Tester</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body onload="inicializarApp()">
+
+    <header class="cabecera">
+        <h1>🛡️ Área Privada del Tester</h1>
+        <button onclick="alternarTema()">🌓 Modo Oscuro</button>
+    </header>
+
+    <div class="contenedor-principal">
+        <section class="panel-exito">
+            <h2>Bienvenido, <span id="dash-nick" class="resaltado"></span></h2>
+            <p>Tus credenciales han sido verificadas.</p>
+            
+            <ul>
+                <li><strong>Edad registrada:</strong> <span id="dash-edad"></span> años</li>
+                <li><strong>Facción aliada:</strong> <span id="dash-faccion"></span></li>
+            </ul>
+
+            <button onclick="cerrarSesion()" class="btn-peligro">Cerrar Sesión (Borrar datos)</button>
+        </section>
+    </div>
+</body>
+</html>
