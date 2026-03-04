@@ -13,7 +13,9 @@
     <button onclick="comparar()">comparador de números</button>
     <button onclick="calculadoraedad()">calcuiladoa edad</button>
     <p class="elinnertext">queso</p>
+    <button onclick="repetidordefrases()">repetidor</button>
     <script>
+        // BLOQUE 1
         function saludar() {
             alert("Saludos");
             let nombre = prompt("Introduce tu nombre");
@@ -39,6 +41,16 @@
             edadoperada = document.getElementsByClassName("elinnertext")[0];
             edadoperada.innerText = "Tienes aproximadamente " + cajatexto + " años";
         }
+
+        function repetidordefrases () {
+            const lafrase = ("estoy aprendiendo JavaScript");
+            elnumeroquesemueve = 1;
+            for (let elnumeroquesemueve = 1; elnumeroquesemueve <=50; elnumeroquesemueve++) {
+                console.log(elnumeroquesemueve + " ."+ "" + lafrase)
+            }
+        }
+
+        // BLOQUE 2 
 
         
     </script>
