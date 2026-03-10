@@ -27,3 +27,8 @@ function analizarEstructura(elementoBoton) {
 
     alert ("El elemento clickado es un " + nombreDelBoton + ". Su ID es " + idDelBoton + " y su clase es  " + claseDelBoton + ". El contenedor padre es un  " + padreDelBoton)
 }
+
+function marcarServidores() {
+    let itemsdeservidores = document.getElementsByTagName("li")
+    for (let i = 0; i < itemsdeservidores.length; i++)
+}
