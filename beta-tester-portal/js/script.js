@@ -20,5 +20,10 @@ function inicializarApp() {
 }
 
 function analizarEstructura(elementoBoton) {
-    
+    let nombreDelBoton = elementoBoton.nodeName;
+    let padreDelBoton = elementoBoton.parentNode;
+    let claseDelBoton = elementoBoton.classNode;
+    let idDelBoton = elementoBoton.Id;
+
+    alert ("El elemento clickado es un " + nombreDelBoton + ". Su ID es " + idDelBoton + " y su clase es  " + claseDelBoton + ". El contenedor padre es un  " + padreDelBoton)
 }
